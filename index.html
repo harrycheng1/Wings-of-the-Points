@@ -94,6 +94,7 @@
     { sc: 'citi', name: 'Citi TYP'},
     { sc: 'c1', name: 'Capital One'},
     { sc: 'marriott', name: 'Marriott Bonvoy'},
+    { sc: 'bilt', name: 'Bilt Rewards'},
     { sc: 'cube', name: 'Cathay Cube'},
     { sc: 'hsbc', name: 'HSBC traveller'},
     { sc: 'none', name: 'N/A'},
@@ -217,87 +218,87 @@
   // console.log(nodes);
 
 
-  const sourceList = ['amex', 'citi', 'chase', 'c1', 'marriott', 'cube', 'hsbc'];
+  const sourceList = ['amex', 'citi', 'chase', 'c1', 'marriott', 'bilt', 'cube', 'hsbc'];
   const nonAliancetargetList = [
-    { t: 'ei', values: [1, 0, 1, 0, 1, 0, 0] },
-    // { t: 'cz', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'ek', values: [1, 1, 1, 1, 1, 1, 1] },
-    { t: 'ly', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'ey', values: [1, 1, 0, 1, 1, 1, 0] },
-    { t: 'f9', values: [0, 0, 0, 0, 1, 0, 0] },
-    // { t: 'hu', values: [0, 0, 0, 0, 1, 0, 0] },
-    { t: 'ha', values: [1, 0, 0, 0, 1, 0, 0] },
-    { t: 'la', values: [0, 0, 0, 0, 1, 0, 0] },
-    { t: 'b6', values: [1, 1, 1, 0, 0, 0, 0] },
-    { t: 'wn', values: [0, 0, 1, 0, 1, 0, 0] },
-    { t: 'vs', values: [1, 1, 1, 0, 1, 0, 0] },
-    { t: 'va', values: [0, 0, 0, 0, 1, 0, 0] },
-    { t: 'jx', values: [0, 0, 0, 0, 0, 0, 0] },
+    { t: 'ei', values: [1, 0, 1, 0, 1, 1, 0, 0] },
+    // { t: 'cz', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'ek', values: [1, 1, 1, 1, 1, 1, 1, 1] },
+    { t: 'ly', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'ey', values: [1, 1, 0, 1, 1, 0, 1, 0] },
+    { t: 'f9', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    // { t: 'hu', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    { t: 'ha', values: [1, 0, 0, 0, 1, 1, 0, 0] },
+    { t: 'la', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    { t: 'b6', values: [1, 1, 1, 0, 0, 0, 0, 0] },
+    { t: 'wn', values: [0, 0, 1, 0, 1, 0, 0, 0] },
+    { t: 'vs', values: [1, 1, 1, 0, 1, 0, 0, 0] },
+    { t: 'va', values: [0, 0, 0, 0, 1, 1, 0, 0] },
+    { t: 'jx', values: [0, 0, 0, 0, 0, 0, 0, 0] },
   ];
   const oneworldtargetList = [
-    { t: 'as', values: [0, 0, 0, 0, 1, 0, 0] },
-    { t: 'aa', values: [0, 0, 0, 0, 1, 0, 0] },
-    { t: 'ba', values: [1, 0, 1, 1, 1, 1, 0] },
-    { t: 'ib', values: [1, 0, 1, 0, 1, 0, 0] },
-    { t: 'cx', values: [1, 1, 0, 1, 1, 1, 1] },
-    { t: 'ay', values: [0, 0, 0, 1, 0, 0, 0] },
-    { t: 'jl', values: [0, 0, 0, 0, 1, 1, 1] },
-    { t: 'mh', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'qf', values: [1, 1, 0, 1, 1, 1, 1] },
-    { t: 'qr', values: [1, 1, 0, 0, 1, 0, 1] },
-    { t: 'rj', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 's7', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'ul', values: [0, 0, 0, 0, 0, 0, 0] },
+    { t: 'as', values: [0, 0, 0, 0, 1, 1, 0, 0] },
+    { t: 'aa', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    { t: 'ba', values: [1, 0, 1, 1, 1, 1, 1, 0] },
+    { t: 'ib', values: [1, 0, 1, 0, 1, 1, 0, 0] },
+    { t: 'cx', values: [1, 1, 0, 1, 1, 1, 1, 1] },
+    { t: 'ay', values: [0, 0, 0, 1, 0, 0, 0, 0] },
+    { t: 'jl', values: [0, 0, 0, 0, 1, 0, 1, 1] },
+    { t: 'mh', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'qf', values: [1, 1, 0, 1, 1, 0, 1, 1] },
+    { t: 'qr', values: [1, 1, 0, 0, 1, 0, 0, 1] },
+    { t: 'rj', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 's7', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'ul', values: [0, 0, 0, 0, 0, 0, 0, 0] },
   ];
   const skyteamtargetList = [
-    { t: 'su', values: [0, 0, 0, 0, 1, 0, 0] },
-    { t: 'ar', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'am', values: [1, 1, 0, 1, 1, 0, 0] },
-    { t: 'ux', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'af', values: [1, 1, 1, 1, 1, 1, 1] },
-    { t: 'az', values: [1, 0, 0, 0, 1, 0, 0] },
-    { t: 'ci', values: [0, 0, 0, 0, 0, 1, 1] },
-    // { t: 'mu', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'ok', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'dl', values: [1, 0, 0, 0, 1, 0, 0] },
-    { t: 'ga', values: [0, 0, 0, 0, 0, 0, 0] },
-    // { t: 'kq', values: [1, 1, 1, 1, 1, 0, 0] },
-    // { t: 'kl', values: [1, 1, 1, 1, 1, 1, 0] },
-    { t: 'ke', values: [0, 0, 0, 0, 1, 0, 0] },
-    { t: 'me', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'sv', values: [0, 0, 0, 0, 1, 0, 0] },
-    // { t: 'ro', values: [1, 1, 1, 1, 1, 0, 0] },
-    { t: 'vn', values: [0, 0, 0, 0, 0, 0, 1] },
-    // { t: 'mf', values: [0, 0, 0, 0, 0, 0, 0] },
+    { t: 'su', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    { t: 'ar', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'am', values: [1, 1, 0, 1, 1, 0, 0, 0] },
+    { t: 'ux', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'af', values: [1, 1, 1, 1, 1, 1, 1, 1] },
+    { t: 'az', values: [1, 0, 0, 0, 1, 0, 0, 0] },
+    { t: 'ci', values: [0, 0, 0, 0, 0, 0, 1, 1] },
+    // { t: 'mu', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'ok', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'dl', values: [1, 0, 0, 0, 1, 0, 0, 0] },
+    { t: 'ga', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    // { t: 'kq', values: [1, 1, 1, 1, 1, 0, 0, 0] },
+    // { t: 'kl', values: [1, 1, 1, 1, 1, 0, 1, 0] },
+    { t: 'ke', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    { t: 'me', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'sv', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    // { t: 'ro', values: [1, 1, 1, 1, 1, 0, 0, 0] },
+    { t: 'vn', values: [0, 0, 0, 0, 0, 0, 0, 1] },
+    // { t: 'mf', values: [0, 0, 0, 0, 0, 0, 0, 0] },
   ];
   const starAlliancetargetList = [
-    // { t: 'jp', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'a3', values: [0, 0, 0, 0, 1, 0, 0] },
-    { t: 'ac', values: [1, 0, 1, 1, 1, 1, 1] },
-    // { t: 'ca', values: [0, 0, 0, 0, 1, 0, 0] },
-    { t: 'ai', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'nz', values: [0, 0, 0, 0, 1, 0, 0] },
-    { t: 'nh', values: [1, 0, 0, 0, 1, 0, 0] },
-    { t: 'oz', values: [0, 0, 0, 0, 1, 0, 0] },
-    // { t: 'os', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'av', values: [1, 1, 0, 1, 1, 0, 1] },
-    // { t: 'sn', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'cm', values: [0, 0, 0, 0, 1, 0, 0] },
-    // { t: 'ou', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'ms', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'et', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'br', values: [0, 1, 0, 1, 0, 1, 1] },
-    // { t: 'lo', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'lh', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'sk', values: [0, 0, 0, 0, 0, 0, 0] },
-    // { t: 'zh', values: [0, 0, 0, 0, 1, 0, 0] },
-    { t: 'sq', values: [1, 1, 1, 1, 1, 0, 1] },
-    { t: 'sa', values: [0, 0, 0, 0, 1, 0, 0] },
-    // { t: 'lx', values: [0, 0, 0, 0, 0, 0, 0] },
-    { t: 'tp', values: [0, 0, 0, 1, 1, 0, 0] },
-    { t: 'tg', values: [0, 1, 0, 0, 1, 0, 0] },
-    { t: 'tk', values: [0, 1, 0, 1, 1, 0, 1] },
-    { t: 'ua', values: [0, 0, 1, 0, 1, 1, 1] },
+    // { t: 'jp', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'a3', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    { t: 'ac', values: [1, 0, 1, 1, 1, 1, 1, 1] },
+    // { t: 'ca', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    { t: 'ai', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'nz', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    { t: 'nh', values: [1, 0, 0, 0, 1, 0, 0, 0] },
+    { t: 'oz', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    // { t: 'os', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'av', values: [1, 1, 0, 1, 1, 1, 0, 1] },
+    // { t: 'sn', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'cm', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    // { t: 'ou', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'ms', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'et', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'br', values: [0, 1, 0, 1, 0, 0, 1, 1] },
+    // { t: 'lo', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'lh', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'sk', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    // { t: 'zh', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    { t: 'sq', values: [1, 1, 1, 1, 1, 0, 0, 1] },
+    { t: 'sa', values: [0, 0, 0, 0, 1, 0, 0, 0] },
+    // { t: 'lx', values: [0, 0, 0, 0, 0, 0, 0, 0] },
+    { t: 'tp', values: [0, 0, 0, 1, 1, 0, 0, 0] },
+    { t: 'tg', values: [0, 1, 0, 0, 1, 0, 0, 0] },
+    { t: 'tk', values: [0, 1, 0, 1, 1, 1, 0, 1] },
+    { t: 'ua', values: [0, 0, 1, 0, 1, 1, 1, 1] },
   ];
   var relations = [
   {
@@ -396,9 +397,10 @@
   var amexColor = '#2E7D32';
   var chaseColor = '#1565C0';
   var citiColor = '#FDD835';
+  var biltColor = '#BDBDBD';
   var cubeColor = '#466D1D';
   var hsbcColor = '#D32F2F';
-  var noneColor = '#BDBDBD';
+  var noneColor = '#CACACA';
 
   var rates = {
     "citi"    : {
@@ -529,6 +531,21 @@
       'vs': "3:1",
       'va': "3:1",
     },
+    "bilt": {
+      'ei': "1:1",
+      'ac': "1:1",
+      'af': "1:1",
+      'as': "1:1",
+      'av': "1:1",
+      'ba': "1:1",
+      'cx': "1:1",
+      'ek': "1:1",
+      'ha': "1:1",
+      'ib': "1:1",
+      'tk': "1:1",
+      'ua': "1:1",
+      'va': "1:1",
+    },
     "cube": {
       'br': "360:1000 or 300:1000",
       'cx': "360:1000 or 300:1000",
@@ -574,6 +591,7 @@
     if (node.sc === 'amex') { return amexColor; }
     if (node.sc === 'chase') { return chaseColor; }
     if (node.sc === 'citi') { return citiColor; }
+    if (node.sc === 'bilt') { return biltColor; }
     if (node.sc === 'cube') { return cubeColor; }
     if (node.sc === 'hsbc') { return hsbcColor; }
   })
@@ -583,6 +601,7 @@
     if ([link.source.sc, link.target.sc].indexOf('chase') >= 0) { return chaseColor; }
     if ([link.source.sc, link.target.sc].indexOf('citi') >= 0) { return citiColor; }
     if ([link.source.sc, link.target.sc].indexOf('amex') >= 0) { return amexColor; }
+    if ([link.source.sc, link.target.sc].indexOf('bilt') >= 0) { return biltColor; }
     if ([link.source.sc, link.target.sc].indexOf('cube') >= 0) { return cubeColor; }
     if ([link.source.sc, link.target.sc].indexOf('hsbc') >= 0) { return hsbcColor; }
     if ([link.source.sc, link.target.sc].indexOf('none') >= 0) { return noneColor; }
@@ -592,7 +611,7 @@
     target = link.target,
     source = link.source;
 
-    if (source.sc === "citi" || source.sc === "amex" || source.sc === "chase" || source.sc === "marriott" || source.sc === "c1" || source.sc === "cube" || source.sc === "hsbc" || source.sc === "none") {
+    if (source.sc === "citi" || source.sc === "amex" || source.sc === "chase" || source.sc === "marriott" || source.sc === "c1" || source.sc === "bilt" || source.sc === "cube" || source.sc === "hsbc" || source.sc === "none") {
       [target, source] = [source, target];
     }
     rate = rates[target.sc] ? (rates[target.sc][source.sc] || "?:?") : "?:?";
